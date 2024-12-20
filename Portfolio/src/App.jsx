@@ -1,8 +1,19 @@
 import React from "react";
+import Header from "./Components/Header";
+import { HeroSection } from "./Components/HeroSection";
+import { Skills } from "./Components/Skills";
+import Projects from "./Components/Projects";
+import Footer from "./Components/Footer";
+import Contact from "./Components/Contact";
 function App() {
   return (
     <div>
-      <h1 className="bg-red-500">Portfolio</h1>
+      <Header />
+      <HeroSection />
+      <Skills />
+      <Projects />
+      <Contact />
+      <Footer />
     </div>
   );
 }
