@@ -47,12 +47,10 @@ export default function Contact() {
         </h2>
         <p className="text-center text-gray-600 mb-16 max-w-2xl mx-auto">
           Do you have any questions or would like to work together? Contact me
-          through one of the channels below. Or if you prefer, fill out the
-          contact form and I will get back to you as soon as possible.
+          through one of the channels below.
         </p>
 
         <div className="grid md:grid-cols-1 gap-8">
-          {/* Contact Cards */}
           <div className="space-y-4">
             <ContactCard
               icon={Phone}
