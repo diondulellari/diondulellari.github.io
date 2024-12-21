@@ -20,7 +20,7 @@ const projects = [
 
 function ProjectCard({ project }) {
   return (
-    <div className="bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+    <div className="bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1 dark:bg-gray-800 dark:shadow-md dark:hover:shadow-lg dark:hover:-translate-y-1">
       <div className="relative">
         <img
           src={project.image}
@@ -30,10 +30,12 @@ function ProjectCard({ project }) {
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
       </div>
       <div className="p-6">
-        <h3 className="text-2xl font-bold mb-2 text-gray-800">
+        <h3 className="text-2xl font-bold mb-2 text-gray-800 dark:text-white">
           {project.title}
         </h3>
-        <p className="text-gray-600 mb-4">{project.description}</p>
+        <p className="text-gray-600 dark:text-white mb-4">
+          {project.description}
+        </p>
         <a
           href={project.live}
           target="_blank"
@@ -50,9 +52,9 @@ function ProjectCard({ project }) {
 
 function Projects() {
   return (
-    <section id="projects" className="py-20 ">
+    <section id="projects" className="py-20 dark:bg-black ">
       <div className="container mx-auto px-4 max-w-6xl">
-        <h2 className="text-3xl font-bold mb-12 text-center text-gray-800">
+        <h2 className="text-3xl font-bold mb-12 text-center text-gray-800 dark:text-white">
           Projects
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

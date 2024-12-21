@@ -5,10 +5,10 @@ export function HeroSection() {
   return (
     <section
       id="main"
-      className="flex flex-col items-center justify-center gap-4 px-4 py-24 md:py-32"
+      className="flex flex-col items-center justify-center gap-4 px-4 py-24 md:py-32 bg-white dark:bg-black dark:text-white"
     >
       <button
-        className="bg-black relative flex items-center px-4 py-2 bg-secondary text-white rounded-md group hover:bg-secondary-dark transition"
+        className="bg-black relative flex items-center px-4 py-2 bg-secondary text-white rounded-md group hover:bg-secondary-dark transition dark:bg-gray-800 dark:hover:bg-gray-900"
         onClick={() =>
           window.open(
             "https://github.com/diondulellari",

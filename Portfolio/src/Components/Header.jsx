@@ -17,7 +17,7 @@ const Header = () => {
   };
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
+    <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60 dark:bg-black/95 dark:border-gray-700 dark:text-white dark:backdrop-blur-[5px] dark:supports-[backdrop-filter]:bg-black/90">
       <div className="container mx-auto flex h-14 items-center px-4">
         <ScrollLink to="#main" smooth className="font-bold text-lg">
           Dion Dulellari
@@ -29,7 +29,7 @@ const Header = () => {
               <ScrollLink
                 to="#technologies"
                 smooth
-                className="inline-flex h-9 items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
+                className="inline-flex h-9 items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-100 focus:bg-gray-100 focus:outline-none dark:hover:bg-gray-700 dark:focus:bg-gray-800 dark:hover:text-white dark:focus:text-white"
               >
                 Technologies
               </ScrollLink>
@@ -38,7 +38,7 @@ const Header = () => {
               <ScrollLink
                 to="#projects"
                 smooth
-                className="inline-flex h-9 items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
+                className="inline-flex h-9 items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-100 focus:bg-gray-100 focus:outline-none dark:hover:bg-gray-700 dark:focus:bg-gray-800 dark:hover:text-white dark:focus:text-white"
               >
                 Projects
               </ScrollLink>
@@ -47,20 +47,19 @@ const Header = () => {
               <ScrollLink
                 to="#contact"
                 smooth
-                className="inline-flex h-9 items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
+                className="inline-flex h-9 items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-100 focus:bg-gray-100 focus:outline-none dark:hover:bg-gray-700 dark:focus:bg-gray-800 dark:hover:text-white dark:focus:text-white"
               >
                 Contact
               </ScrollLink>
             </li>
           </ul>
         </nav>
-
         <div className="flex flex-1 items-center justify-end space-x-1">
           <nav className="flex items-center space-x-1">
             <Link
               to="https://github.com/diondulellari"
               target="_blank"
-              className="inline-flex h-9 w-9 items-center justify-center rounded-md transition-colors hover:bg-gray-100"
+              className="inline-flex h-9 w-9 items-center justify-center rounded-md transition-colors hover:bg-gray-100 dark:hover:bg-gray-700"
             >
               <Github className="h-4 w-4" />
               <span className="sr-only">GitHub</span>
@@ -68,14 +67,14 @@ const Header = () => {
             <Link
               to="https://linkedin.com/in/diondulellari"
               target="_blank"
-              className="inline-flex h-9 w-9 items-center justify-center rounded-md transition-colors hover:bg-gray-100"
+              className="inline-flex h-9 w-9 items-center justify-center rounded-md transition-colors hover:bg-gray-100 dark:hover:bg-gray-700"
             >
               <Linkedin className="h-4 w-4" />
               <span className="sr-only">LinkedIn</span>
             </Link>
 
             <button
-              className="inline-flex h-9 w-9 items-center justify-center rounded-md transition-colors hover:bg-gray-100"
+              className="inline-flex h-9 w-9 items-center justify-center rounded-md transition-colors hover:bg-gray-100 dark:hover:bg-gray-700"
               onClick={toggleTheme}
             >
               <Sun
@@ -107,7 +106,7 @@ const Header = () => {
       </div>
 
       {isMenuOpen && (
-        <nav className="md:hidden border-t border-gray-200">
+        <nav className="md:hidden border-t border-[rgb(var(--color-border))]">
           <div className="container mx-auto py-4 px-4 space-y-1">
             <ScrollLink
               to="#technologies"

@@ -90,21 +90,23 @@ const technologies = [
 
 const TechCard = ({ name, icon }) => (
   <div className="flex flex-col items-center gap-3">
-    <div className="w-20 h-20 rounded-2xl bg-white shadow-md flex items-center justify-center p-4 hover:shadow-lg transition-shadow duration-300">
+    <div className="w-20 h-20 rounded-2xl bg-white shadow-md flex items-center justify-center dark:transition-all  p-4 hover:shadow-lg transition-shadow duration-300 dark:bg-gray-800 dark:hover:shadow-xl dark:shadow-lg  dark: hover:-translate-y-1">
       <img src={icon} alt={name} className="w-12 h-12 object-contain" />
     </div>
-    <span className="text-gray-600 text-sm font-medium">{name}</span>
+    <span className="text-gray-600 dark:text-white text-sm font-medium">
+      {name}
+    </span>
   </div>
 );
 
 export const Skills = () => {
   return (
-    <section id="technologies" className="py-24 ">
+    <section id="technologies" className="py-24 bg-white dark:bg-black ">
       <div className="container mx-auto px-4 max-w-4xl">
-        <h2 className="text-4xl font-bold text-center text-gray-900 mb-4">
+        <h2 className="text-4xl font-bold text-center text-gray-900 mb-4 dark:text-white">
           Technologies and Skills
         </h2>
-        <p className="text-center text-gray-600 mb-16 max-w-2xl mx-auto">
+        <p className="text-center text-gray-600 dark:text-white mb-16 max-w-2xl mx-auto">
           Here you will find a list of the main technologies and tools that I
           use to create new solutions.
         </p>
