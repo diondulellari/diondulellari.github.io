@@ -2,8 +2,15 @@ import React from "react";
 import { ExternalLink } from "lucide-react";
 import postal from "../assets/postal.png";
 import habit from "../assets/habit.png";
+import chicken from "../assets/chicks.png";
 
 const projects = [
+  {
+    title: "Chik's Run",
+    description: "A web application built with React and SpringBoot",
+    image: chicken,
+    live: "http://23.97.195.247/",
+  },
   {
     title: "Postal Service",
     description: "A web application built with React and .NET",
