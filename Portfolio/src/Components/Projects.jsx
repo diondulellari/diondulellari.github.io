@@ -6,7 +6,7 @@ import chicken from "../assets/chicks.png";
 
 const projects = [
   {
-    title: "Chik's Run",
+    title: "Chick's Run",
     description: "A web application built with React and SpringBoot",
     image: chicken,
     live: "http://23.97.195.247/",
