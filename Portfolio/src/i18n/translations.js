@@ -22,6 +22,9 @@ export const translations = {
     },
     hero: {
       githubButton: "Check my GitHub",
+      downloadCv: "Download CV",
+      downloadCvLabel: "Download my CV (PDF, English)",
+      cvFile: "Dion_Dulellari_CV_EN.pdf",
       titleLine1: "Combining logic and creativity",
       titleLine2: "to build exceptional applications.",
       intro:
@@ -111,6 +114,9 @@ export const translations = {
     },
     hero: {
       githubButton: "Dai un'occhiata al mio GitHub",
+      downloadCv: "Scarica il CV",
+      downloadCvLabel: "Scarica il mio CV (PDF, in italiano)",
+      cvFile: "Dion_Dulellari_CV_IT.pdf",
       titleLine1: "Logica e creatività",
       titleLine2: "al servizio di applicazioni eccezionali.",
       intro:
