@@ -1,72 +1,73 @@
-import React from "react";
-import { ExternalLink } from "lucide-react";
-import postal from "../assets/postal.png";
-import habit from "../assets/habit.png";
-import chicken from "../assets/chicks.png";
-
-const projects = [
-  {
-    title: "Chick's Run",
-    description: "A web application built with React and SpringBoot",
-    image: chicken,
-    live: "http://23.97.195.247/",
-  },
-  {
-    title: "Postal Service",
-    description: "A web application built with React and .NET",
-    image: postal,
-    live: "https://grandpost.al",
-  },
-  {
-    title: "Hobbit",
-    description: "An Habit Tracker built with React and SpringBoot",
-    image: habit,
-    live: "https://notliveyet.com",
-  },
-];
+import { ExternalLink, Briefcase } from "lucide-react";
+import { projects } from "../data/projects";
+import { useLanguage } from "../i18n/useLanguage";
 
 function ProjectCard({ project }) {
+  const { t } = useLanguage();
+
   return (
-    <div className="bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1 dark:bg-gray-800 dark:shadow-md dark:hover:shadow-lg dark:hover:-translate-y-1">
+    <article className="bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1 dark:bg-gray-800 dark:shadow-md dark:hover:shadow-lg">
       <div className="relative">
-        <img
-          src={project.image}
-          alt={project.title}
-          className="w-full h-64 object-cover"
-        />
+        {project.image ? (
+          <img
+            src={project.image}
+            alt={project.title}
+            className="w-full h-64 object-cover"
+          />
+        ) : (
+          <div
+            aria-hidden="true"
+            className="w-full h-64 flex items-center justify-center bg-gradient-to-br from-blue-600 via-blue-800 to-gray-900"
+          >
+            <span className="text-4xl font-bold tracking-tighter text-white/90">
+              {project.title}
+            </span>
+          </div>
+        )}
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
       </div>
       <div className="p-6">
         <h3 className="text-2xl font-bold mb-2 text-gray-800 dark:text-white">
           {project.title}
         </h3>
+        {project.work && (
+          <p className="inline-flex items-center gap-1.5 mb-3 rounded-full bg-gray-100 px-3 py-1 text-xs font-medium text-gray-700 dark:bg-gray-700 dark:text-gray-200">
+            <Briefcase className="h-3.5 w-3.5" aria-hidden="true" />
+            {t.projects.workBadge}
+          </p>
+        )}
         <p className="text-gray-600 dark:text-white mb-4">
-          {project.description}
+          {t.projects.items[project.id]}
         </p>
-        <a
-          href={project.live}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-300"
-        >
-          <ExternalLink size={18} className="mr-2" />
-          Live
-        </a>
+        {project.live && (
+          <a
+            href={project.live}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={t.projects.liveLabel.replace("{title}", project.title)}
+            className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-300"
+          >
+            <ExternalLink size={18} className="mr-2" aria-hidden="true" />
+            {t.projects.live}
+          </a>
+        )}
       </div>
-    </div>
+    </article>
   );
 }
 
 function Projects() {
+  const { t } = useLanguage();
+
   return (
-    <section id="projects" className="py-20 dark:bg-black ">
+    <section id="projects" className="py-20 dark:bg-black">
       <div className="container mx-auto px-4 max-w-6xl">
         <h2 className="text-3xl font-bold mb-12 text-center text-gray-800 dark:text-white">
-          Projects
+          {t.projects.title}
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {projects.map((project, index) => (
-            <ProjectCard key={index} project={project} />
+          {projects.map((project) => (
+            <ProjectCard key={project.id} project={project} />
           ))}
         </div>
       </div>
