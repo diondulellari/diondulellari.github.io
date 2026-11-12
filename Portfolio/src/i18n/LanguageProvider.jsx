@@ -4,7 +4,8 @@ import { translations } from "./translations";
 
 const STORAGE_KEY = "portfolio-language";
 const LANGUAGES = Object.keys(translations);
-const DEFAULT_LANGUAGE = "en";
+// Italian is the default; a visitor's saved choice (EN | IT switcher) wins.
+const DEFAULT_LANGUAGE = "it";
 
 function getInitialLanguage() {
   try {
@@ -13,8 +14,7 @@ function getInitialLanguage() {
   } catch {
     // localStorage unavailable (private mode, blocked storage)
   }
-  const browserLanguage = navigator.language?.slice(0, 2).toLowerCase();
-  return browserLanguage === "it" ? "it" : DEFAULT_LANGUAGE;
+  return DEFAULT_LANGUAGE;
 }
 
 export function LanguageProvider({ children }) {
