@@ -3,7 +3,7 @@ import { Menu, X, Github, Linkedin, Sun, Moon } from "lucide-react";
 import { useTheme } from "../hooks/useTheme";
 import { useLanguage } from "../i18n/useLanguage";
 
-const NAV_ITEMS = ["experience", "technologies", "projects", "contact"];
+const NAV_ITEMS = ["technologies", "projects", "education", "contact"];
 
 const SOCIAL_LINKS = [
   { key: "github", href: "https://github.com/diondulellari", icon: Github },

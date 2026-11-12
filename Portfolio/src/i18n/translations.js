@@ -6,9 +6,9 @@ export const translations = {
     header: {
       brand: "Dion Dulellari",
       nav: {
-        experience: "Experience",
         technologies: "Technologies",
         projects: "Projects",
+        education: "Education",
         contact: "Contact",
       },
       mainNav: "Main navigation",
@@ -30,33 +30,12 @@ export const translations = {
       intro:
         "Hi, I'm Dion Dulellari, a software engineer based in Tirana. I build web and cross-platform applications end to end with Angular, React, Blazor and .NET, from SQL Server databases and REST APIs to responsive, user-centric interfaces.",
     },
-    experience: {
-      title: "Experience",
-      description:
-        "Where I work today and what I studied along the way.",
-      jobs: [
-        {
-          role: "Software Engineer",
-          company: "Metasoft360",
-          location: "Tirana, Albania",
-          period: "June 2025 – Present",
-          points: [
-            "Build and maintain production web and cross-platform applications with Angular, React and Blazor across several client products.",
-            "Design and optimize SQL Server databases and T-SQL stored procedures: joins, pagination, aggregation, query debugging and performance tuning.",
-            "Deliver features end to end, from the data model and stored procedures through REST APIs to responsive, component-based UIs.",
-            "Integrate third-party services and payment gateways (PayPal) into front ends backed by REST APIs.",
-            "Troubleshoot issues across the whole stack, tracing problems from the UI to the API to the database.",
-            "Work in a team with Git and CI/CD workflows, writing clean, reusable and maintainable code.",
-          ],
-        },
-      ],
-      educationTitle: "Education",
-      education: {
-        degree: "Game Design and Development (BSc, 2 years completed)",
-        school:
-          "Estonian Entrepreneurship University of Applied Sciences (EUAS)",
-        location: "Tallinn, Estonia",
-      },
+    education: {
+      title: "Education",
+      description: "Where my path in software started.",
+      degree: "Game Design and Development (BSc, 2 years completed)",
+      school: "Estonian Entrepreneurship University of Applied Sciences (EUAS)",
+      location: "Tallinn, Estonia",
     },
     skills: {
       title: "Technologies and Skills",
@@ -67,14 +46,11 @@ export const translations = {
       title: "Projects",
       live: "Live",
       liveLabel: "Open {title} (opens in a new tab)",
-      workBadge: "Built at Metasoft360",
       items: {
-        jsuite360:
-          "SaaS platform for tracking deadlines and compliance for vehicles, employees and work records, delivered as a web app and a Blazor iOS/Android app.",
-        truckmove:
-          "Cloud-based fleet and operations platform for concrete producers and logistics companies: real-time vehicle tracking, digital paperwork and vehicle assignment planning.",
-        postalService: "A web application built with React and .NET.",
-        chicksRun: "A web application built with React and Spring Boot.",
+        postalService:
+          "A platform for package tracking, inventory management and delivery transparency. Businesses create and manage packages, couriers handle delivery, with real-time status updates, bulk package management, delivery reports and customer notifications.",
+        chicksRun:
+          "A lane-crossing multiplier game with a React front end and a Spring Boot back end, MetaMask wallet integration for Web3 transactions, and game sessions saved in PostgreSQL so players can reconnect and pick up where they left off.",
         hobbit: "A habit tracker built with React and Spring Boot.",
       },
     },
@@ -98,9 +74,9 @@ export const translations = {
     header: {
       brand: "Dion Dulellari",
       nav: {
-        experience: "Esperienza",
         technologies: "Tecnologie",
         projects: "Progetti",
+        education: "Formazione",
         contact: "Contatti",
       },
       mainNav: "Navigazione principale",
@@ -122,33 +98,12 @@ export const translations = {
       intro:
         "Ciao, sono Dion Dulellari, software engineer a Tirana. Sviluppo applicazioni web e multipiattaforma dall'inizio alla fine con Angular, React, Blazor e .NET: dal database SQL Server e le API REST fino a interfacce responsive pensate per chi le usa.",
     },
-    experience: {
-      title: "Esperienza",
-      description: "Dove lavoro oggi e cosa ho studiato lungo il percorso.",
-      jobs: [
-        {
-          role: "Software Engineer",
-          company: "Metasoft360",
-          location: "Tirana, Albania",
-          period: "Giugno 2025 – oggi",
-          points: [
-            "Sviluppo e mantengo applicazioni web e multipiattaforma in produzione con Angular, React e Blazor per diversi prodotti dei clienti.",
-            "Progetto e ottimizzo database SQL Server e stored procedure T-SQL: join, paginazione, aggregazioni, debug delle query e tuning delle prestazioni.",
-            "Porto le funzionalità dall'idea al rilascio: modello dati, stored procedure, API REST e interfacce responsive a componenti.",
-            "Integro servizi esterni e gateway di pagamento (PayPal) in front end che comunicano con API REST.",
-            "Individuo e risolvo problemi su tutto lo stack, risalendo dall'interfaccia alle API fino al database.",
-            "Lavoro in team con Git e pipeline CI/CD, scrivendo codice pulito, riutilizzabile e facile da mantenere.",
-          ],
-        },
-      ],
-      educationTitle: "Formazione",
-      education: {
-        degree:
-          "Game Design and Development (laurea triennale, 2 anni completati)",
-        school:
-          "Estonian Entrepreneurship University of Applied Sciences (EUAS)",
-        location: "Tallinn, Estonia",
-      },
+    education: {
+      title: "Formazione",
+      description: "Da dove è partito il mio percorso nel software.",
+      degree: "Game Design and Development (laurea triennale, 2 anni completati)",
+      school: "Estonian Entrepreneurship University of Applied Sciences (EUAS)",
+      location: "Tallinn, Estonia",
     },
     skills: {
       title: "Tecnologie e competenze",
@@ -159,14 +114,11 @@ export const translations = {
       title: "Progetti",
       live: "Vedi online",
       liveLabel: "Apri {title} (si apre in una nuova scheda)",
-      workBadge: "Sviluppato in Metasoft360",
       items: {
-        jsuite360:
-          "Piattaforma SaaS per gestire scadenze e adempimenti di veicoli, dipendenti e registri di lavoro, disponibile come web app e come app Blazor per iOS e Android.",
-        truckmove:
-          "Piattaforma cloud per la gestione di flotte e operazioni di produttori di calcestruzzo e aziende di logistica: tracciamento dei mezzi in tempo reale, documenti digitali e pianificazione delle assegnazioni.",
-        postalService: "Un'applicazione web realizzata con React e .NET.",
-        chicksRun: "Un'applicazione web realizzata con React e Spring Boot.",
+        postalService:
+          "Una piattaforma per il tracciamento dei pacchi, la gestione dell'inventario e la trasparenza delle consegne. Le aziende creano e gestiscono i pacchi, i corrieri si occupano della consegna, con aggiornamenti di stato in tempo reale, gestione massiva dei pacchi, report sulle consegne e notifiche ai clienti.",
+        chicksRun:
+          "Un gioco a moltiplicatore in cui si attraversano le corsie, con front end React e back end Spring Boot, integrazione del wallet MetaMask per le transazioni Web3 e sessioni di gioco salvate in PostgreSQL, così chi gioca può riconnettersi e riprendere la partita.",
         hobbit: "Un'app per monitorare le proprie abitudini, realizzata con React e Spring Boot.",
       },
     },

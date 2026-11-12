@@ -1,4 +1,4 @@
-import { ExternalLink, Briefcase } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import { projects } from "../data/projects";
 import { useLanguage } from "../i18n/useLanguage";
 
@@ -39,12 +39,6 @@ function ProjectCard({ project }) {
         <h3 className="text-2xl font-bold mb-2 text-gray-800 dark:text-white">
           {project.title}
         </h3>
-        {project.work && (
-          <p className="inline-flex items-center gap-1.5 mb-3 rounded-full bg-gray-100 px-3 py-1 text-xs font-medium text-gray-700 dark:bg-gray-700 dark:text-gray-200">
-            <Briefcase className="h-3.5 w-3.5" aria-hidden="true" />
-            {t.projects.workBadge}
-          </p>
-        )}
         <p className="text-gray-600 dark:text-white mb-4">
           {t.projects.items[project.id]}
         </p>
