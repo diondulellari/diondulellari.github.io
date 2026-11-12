@@ -30,7 +30,7 @@ export const Skills = () => {
         <p className="text-center text-gray-600 dark:text-white mb-16 max-w-2xl mx-auto">
           {t.skills.description}
         </p>
-        <ul className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 justify-items-center">
+        <ul className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-8 justify-items-center">
           {technologies.map((tech) => (
             <li key={tech.name}>
               <TechCard {...tech} />

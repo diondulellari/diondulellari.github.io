@@ -5,27 +5,36 @@ import { useLanguage } from "../i18n/useLanguage";
 function ProjectCard({ project }) {
   const { t } = useLanguage();
 
+  const image = (
+    <div className="relative">
+      <img
+        src={project.image}
+        alt={project.title}
+        loading="lazy"
+        className={`w-full h-64 object-cover ${project.imagePosition ?? ""}`}
+      />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+    </div>
+  );
+
   return (
     <article className="bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1 dark:bg-gray-800 dark:shadow-md dark:hover:shadow-lg">
-      <div className="relative">
-        {project.image ? (
-          <img
-            src={project.image}
-            alt={project.title}
-            className="w-full h-64 object-cover"
-          />
-        ) : (
-          <div
-            aria-hidden="true"
-            className="w-full h-64 flex items-center justify-center bg-gradient-to-br from-blue-600 via-blue-800 to-gray-900"
-          >
-            <span className="text-4xl font-bold tracking-tighter text-white/90">
-              {project.title}
-            </span>
-          </div>
-        )}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-      </div>
+      {project.live ? (
+        // Mouse shortcut to the site; keyboard and screen-reader users get the
+        // labelled "Live" button below, so this copy is skipped for them.
+        <a
+          href={project.live}
+          target="_blank"
+          rel="noopener noreferrer"
+          tabIndex={-1}
+          aria-hidden="true"
+          className="block"
+        >
+          {image}
+        </a>
+      ) : (
+        image
+      )}
       <div className="p-6">
         <h3 className="text-2xl font-bold mb-2 text-gray-800 dark:text-white">
           {project.title}

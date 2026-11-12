@@ -70,7 +70,6 @@ export const translations = {
           "SaaS platform for tracking deadlines and compliance for vehicles, employees and work records, delivered as a web app and a Blazor iOS/Android app.",
         truckmove:
           "Cloud-based fleet and operations platform for concrete producers and logistics companies: real-time vehicle tracking, digital paperwork and vehicle assignment planning.",
-        koki: "Full-stack web application: front end, API integration and a SQL Server database.",
         postalService: "A web application built with React and .NET.",
         chicksRun: "A web application built with React and Spring Boot.",
         hobbit: "A habit tracker built with React and Spring Boot.",
@@ -160,7 +159,6 @@ export const translations = {
           "Piattaforma SaaS per gestire scadenze e adempimenti di veicoli, dipendenti e registri di lavoro, disponibile come web app e come app Blazor per iOS e Android.",
         truckmove:
           "Piattaforma cloud per la gestione di flotte e operazioni di produttori di calcestruzzo e aziende di logistica: tracciamento dei mezzi in tempo reale, documenti digitali e pianificazione delle assegnazioni.",
-        koki: "Applicazione web full-stack: front end, integrazione delle API e database SQL Server.",
         postalService: "Un'applicazione web realizzata con React e .NET.",
         chicksRun: "Un'applicazione web realizzata con React e Spring Boot.",
         hobbit: "Un'app per monitorare le proprie abitudini, realizzata con React e Spring Boot.",
