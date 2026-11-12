@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Phone, Mail, Linkedin, Github, Copy, Check } from "lucide-react";
+import { Phone, Mail, Github, Copy, Check } from "lucide-react";
 import { useLanguage } from "../i18n/useLanguage";
 
 const CONTACTS = [
@@ -14,12 +14,6 @@ const CONTACTS = [
     title: "E-mail",
     value: "dulellari.dion@gmail.com",
     copyable: true,
-  },
-  {
-    icon: Linkedin,
-    title: "LinkedIn",
-    value: "in/diondulellari/",
-    link: "https://www.linkedin.com/in/diondulellari/",
   },
   {
     icon: Github,
@@ -108,7 +102,7 @@ export default function Contact() {
           {t.contact.description}
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {CONTACTS.map((contact) => (
             <ContactCard key={contact.title} {...contact} />
           ))}
