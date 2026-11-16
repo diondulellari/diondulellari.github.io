@@ -28,7 +28,7 @@ export function HeroSection() {
         {/* The CV matches the selected language (files live in /public). */}
         <a
           href={`${import.meta.env.BASE_URL}${t.hero.cvFile}`}
-          download
+          download={t.hero.cvFile}
           aria-label={t.hero.downloadCvLabel}
           className="flex items-center px-4 py-2 rounded-md border border-gray-300 group transition-colors hover:bg-gray-100 dark:border-gray-700 dark:hover:bg-gray-800"
         >
